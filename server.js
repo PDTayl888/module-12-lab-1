@@ -9,9 +9,11 @@ app.listen(port, () => {
 });
 
 app.get("/contact", (req, res) => {
+     console.log(`Server is serving contact page`);
   res.sendFile(path.join(__dirname, "public/contact.html"));
 });
 
 app.get("/", (req, res) => {
+     console.log(`Server is serving home page`);
   res.sendFile(path.join(__dirname, "public/index.html"));
 });
